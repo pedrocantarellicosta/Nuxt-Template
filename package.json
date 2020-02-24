@@ -1,7 +1,7 @@
 {
-  "name": "vue-components",
+  "name": "Nuxt-Template",
   "version": "1.0.0",
-  "description": "My sublime Nuxt.js project",
+  "description": "Original Nuxt.js templates in Atomic Design",
   "author": "8beeeaaat",
   "private": true,
   "scripts": {
