@@ -21,7 +21,8 @@
     "postcss-hexrgba": "^2.0.0",
     "postcss-nested": "^4.2.1",
     "postcss-responsive-type": "^1.0.0",
-    "postcss-url": "^8.0.0"
+    "postcss-url": "^8.0.0",
+    "reset-css": "^5.0.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

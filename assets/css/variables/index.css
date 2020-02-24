@@ -1,0 +1,76 @@
+:root {
+  --font-family--default: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Yu Gothic", YuGothic, Verdana, Meiryo, Arial, sans-serif;
+  --transition: 0.5s cubic-bezier(0, 1.05, 0.1, 1.01);
+  --base-size: 16px;
+  --margin--base: var(--base-size);
+  --margin--section: calc(var(--margin--base) * 2);
+  --inner-padding: calc(var(--margin--base) * 2);
+  --input-height: calc(var(--margin--base) * 2);
+
+  --background-color: #eee;
+  --shadow: 0 0.6px 0.5px -3px rgba(0, 0, 0, 0.001),
+    0 1.4px 1.3px -3px rgba(0, 0, 0, 0.003),
+    0 2.4px 2.4px -3px rgba(0, 0, 0, 0.006),
+    0 3.8px 3.9px -3px rgba(0, 0, 0, 0.01),
+    0 5.8px 6.4px -3px rgba(0, 0, 0, 0.017),
+    0 9px 10.3px -3px rgba(0, 0, 0, 0.028),
+    0 15px 17.8px -3px rgba(0, 0, 0, 0.046),
+    0 30px 37px -3px rgba(0, 0, 0, 0.08);
+  --shadow--hover: 0 0.4px 0.5px -16px rgba(0, 0, 0, 0.001),
+    0 1px 1.3px -16px rgba(0, 0, 0, 0.004),
+    0 1.7px 2.4px -16px rgba(0, 0, 0, 0.009),
+    0 2.6px 3.9px -16px rgba(0, 0, 0, 0.016),
+    0 4.1px 6.4px -16px rgba(0, 0, 0, 0.026),
+    0 6.3px 10.3px -16px rgba(0, 0, 0, 0.042),
+    0 10.5px 17.8px -16px rgba(0, 0, 0, 0.069),
+    0 21px 37px -16px rgba(0, 0, 0, 0.12);
+  --shadow--active: 0 0.2px 0.9px -34px rgba(0, 0, 0, 0.001),
+    0 0.5px 2.3px -34px rgba(0, 0, 0, 0.004),
+    0 0.8px 4.2px -34px rgba(0, 0, 0, 0.008),
+    0 1.3px 6.9px -34px rgba(0, 0, 0, 0.014),
+    0 1.9px 11.2px -34px rgba(0, 0, 0, 0.024),
+    0 3px 18.2px -34px rgba(0, 0, 0, 0.039),
+    0 5px 31.4px -34px rgba(0, 0, 0, 0.063),
+    0 10px 65px -34px rgba(0, 0, 0, 0.11);
+
+  --color: #2b364c;
+  --color--theme: #285078;
+  --color--theme-light: #a0bfdc;
+  --color--primary: #417cb7;
+  --color--danger: #c9455b;
+  --color--disabled: #f6f6f6;
+
+  --button-color: #fff;
+  --card-bg-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #191b23;
+    --color: #ddd;
+    --button-color: #2b364c;
+    --card-bg-color: #444;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family--default);
+  font-size: 10px;
+  color: var(--color);
+  background: var(--background-color);
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
