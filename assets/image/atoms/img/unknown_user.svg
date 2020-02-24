@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FAF9F9;">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>atoms/img/unknown_user</title>
+    <desc>Created with Sketch.</desc>
+    <g id="atoms/img/unknown_user" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FAF9F9" x="0" y="0" width="120" height="120"></rect>
+        <circle id="Oval" fill="#D8D8D8" cx="60.5" cy="37.5" r="19.5"></circle>
+        <path d="M28,85.9432591 C28,67.9940047 42.5507456,62 60.5,62 C78.4492544,62 93,67.9940047 93,85.9432591 C93,85.9623114 92.9999836,85.9813598 92.9999508,86.0004044 L93,86 L93,120 L28,120 Z" id="Combined-Shape" fill="#D8D8D8"></path>
+    </g>
+</svg>
