@@ -1,7 +1,6 @@
 <template lang="pug">
   .container
     div
-      logo
       h1.title
         | Nuxt-Template
       h2.subtitle
@@ -14,12 +13,8 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-
 export default {
-  components: {
-    Logo
-  }
+  components: {}
 };
 </script>
 
