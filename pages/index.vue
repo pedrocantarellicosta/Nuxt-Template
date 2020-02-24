@@ -3,9 +3,9 @@
     div
       logo
       h1.title
-        | Vue Components
+        | Nuxt-Template
       h2.subtitle
-        | My sublime Nuxt.js project
+        | Original Nuxt.js templates in Atomic Design
       .links
         a.button--green(href="https://nuxtjs.org/" target="_blank")
           | Documentation
