@@ -8,6 +8,8 @@
       slot(name="main")
     .t-single-page__bottom-option(v-if="$slots.bottomOption")
       slot(name="bottomOption")
+    .t-single-page__modal
+      slot(name="modal")
 </template>
 
 <script>
