@@ -14,6 +14,11 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
+    script: [
+      {
+        src: 'https://code.jquery.com/jquery-3.4.1.min.js'
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -23,7 +28,7 @@ module.exports = {
     ]
   },
   /*
-   ** Customize the progress-bar color
+   ** Customize the progress-bar colorhttps://code.jquery.com/jquery-3.4.1.min.js
    */
   loading: { color: '#fff' },
   /*
