@@ -90,10 +90,17 @@ export default {
     height: 32px;
     padding: 0;
     border: none;
+    outline: none;
     background-image: url("./modal_close.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+    transition: var(--transtion);
+
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 
   &__content {

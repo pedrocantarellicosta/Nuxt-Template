@@ -1,6 +1,6 @@
 import { storiesOf } from "@storybook/vue"
 import Modal from "."
-import ProfileCard from "../../organisms/ProfileCard/"
+import ProfileCard from "@/components/organisms/ProfileCard/"
 import { loggined } from "@/.storybook/dummy/user"
 
 storiesOf("Molecules/Modal", module)
