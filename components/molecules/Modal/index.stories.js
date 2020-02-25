@@ -1,20 +1,22 @@
 import { storiesOf } from "@storybook/vue"
 import Modal from "."
+import ProfileCard from "../../organisms/ProfileCard/"
+import { loggined } from "@/.storybook/dummy/user"
 
 storiesOf("Molecules/Modal", module)
   .add(
     "default",
     () => ({
-      components: { Modal },
+      components: { Modal,ProfileCard },
       data() {
         return {
+          user: loggined
         }
       },
       mounted(){
-        debugger
         this.$refs.modal.open()
       },
-      template: '<Modal ref="modal">aaa</modal>'
+      template: '<Modal ref="modal"><ProfileCard :user="user" /></modal>'
     }),
     {
       info: {

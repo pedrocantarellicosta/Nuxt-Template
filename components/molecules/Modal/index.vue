@@ -80,9 +80,9 @@ export default {
     grid-column: 4;
     align-self: flex-start;
     justify-self: flex-end;
-    position: relative;
-    top: 8px;
-    right: 8px;
+    position: absolute;
+    top: 46px;
+    right: 28px;
     z-index: 2;
     display: flex;
     width: 32px;
@@ -101,6 +101,8 @@ export default {
     width: 100%;
     height: calc(100% - 80px);
     padding: 40px 20px;
+    overflow: scroll;
+    scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     background: #fff;
