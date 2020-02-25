@@ -1,14 +1,15 @@
 <template lang="pug">
   .m-modal(:aria-hidden="hidden")
-    .m-modal__content
+    Card.m-modal__content
       slot
     button.m-modal__close(@click="close")
 
 </template>
 <script>
+import Card from '@/components/atoms/Card/';
 export default {
   name: "modal",
-
+  components: { Card },
   data() {
     return {
       hidden: true
