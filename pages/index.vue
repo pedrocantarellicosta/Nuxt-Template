@@ -1,53 +1,24 @@
 <template lang="pug">
   SinglePage
     template(slot="main")
-      .container
-        div
-          h1.title
-            | Nuxt-Template
-          h2.subtitle
-            | Original Nuxt.js templates in Atomic Design
-          .links
-            a.button--green(href="https://nuxtjs.org/" target="_blank")
-              | Documentation
-            a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank")
-              | GitHub
-        Button(@click="onClick1")
-          | モーダル開くよ
-        Button(@click="onClick2")
-          | モーダル開くよ
-    template(slot="modal")
-      Modal(ref="modal1")
-        ProfileCard(:user="user")
-      Modal(ref="modal2")
-        | ユーザーつくるよ
+      h1.title
+        | Nuxt-Template
+      h2.subtitle
+        | Original Nuxt.js templates in Atomic Design
+      .links
+        a.button--green(href="https://nuxtjs.org/" target="_blank")
+          | Documentation
+        a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank")
+          | GitHub
 </template>
 
 <script>
 import SinglePage from "@/components/templates/SinglePage"
-import ProfileCard from "@/components/organisms/ProfileCard"
-import Button from "@/components/atoms/Button"
-import Modal from '@/components/molecules/Modal'
 export default {
   components: {
-    SinglePage,
-    ProfileCard,
-    Button,
-    Modal
+    SinglePage
   },
-  data(){
-    return {
-      user: {
-  email: "8beeeaaat@gmail.com",
-  locale: "ja",
-  username: "8beeeaaat",
-  age: 30,
-  thumbnailUrl: "https://avatars3.githubusercontent.com/u/57888149?s=40&v=4",
-  loggedIn: true
-}
-    }
-  },
-  methods: {
+   methods: {
     onClick1() {
       this.$refs.modal1.open()
     },
