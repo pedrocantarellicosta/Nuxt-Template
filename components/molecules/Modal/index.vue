@@ -88,6 +88,7 @@ export default {
     width: 32px;
     height: 32px;
     padding: 0;
+    border: none;
     background-image: url("./modal_close.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +98,7 @@ export default {
   &__content {
     grid-row: 2;
     grid-column: 2/5;
-    width: calc(100% - 40px);
+    width: 100%;
     height: calc(100% - 80px);
     padding: 40px 20px;
     display: flex;
