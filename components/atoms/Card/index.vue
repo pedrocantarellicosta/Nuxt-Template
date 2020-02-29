@@ -27,6 +27,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: var(--inner-padding);
+  box-sizing: content-box;
   background: var(--card-bg-color);
   border-radius: 8px;
   box-shadow: var(--shadow);
