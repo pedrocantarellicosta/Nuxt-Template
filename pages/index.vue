@@ -1,6 +1,6 @@
 <template lang="pug">
-  .container
-    div
+  SinglePage
+    template(slot="main")
       h1.title
         | Nuxt-Template
       h2.subtitle
@@ -13,8 +13,19 @@
 </template>
 
 <script>
+import SinglePage from "@/components/templates/SinglePage"
 export default {
-  components: {}
+  components: {
+    SinglePage
+  },
+   methods: {
+    onClick1() {
+      this.$refs.modal1.open()
+    },
+    onClick2() {
+      this.$refs.modal2.open()
+    }
+  }
 };
 </script>
 
@@ -23,6 +34,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
